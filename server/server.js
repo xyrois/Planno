@@ -18,7 +18,7 @@ app.use(clerkMiddleware());
 
 app.get("/", (req, res) => res.send("Server is live!⌛"));
 
-// Set up the "/api/inngest" routes with the serve handler
+// Set up the "/api/inngest" (recommended) routes with the serve handler
 app.use("/api/inngest", serve({ client: inngest, functions }));
 
 // Routes
